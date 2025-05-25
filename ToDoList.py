@@ -68,7 +68,7 @@ while True:
     elif choice == "4":
         delete_task()
     elif choice == "5":
-        print("Goodbye!")
+        print("Goodbye!") # Exit the program
         break
     else:
         print("Invalid option. Try again.")
