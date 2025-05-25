@@ -27,17 +27,19 @@ def view_tasks():
             status = "✅" if t["done"] else "❌"
             print(f"{index}. {t['task']} [{status}]")
 
+# Function to mark a specific as completed
 def mark_completed():
     view_tasks()
     try:
         num = int(input("Enter task number to mark as complete: "))
         if 1 <= num <= len(tasks):
-            tasks[num - 1]["done"] = True
+            tasks[num - 1]["done"] = True # Set the "done" status to True
             print("Task marked as completed.")
         else:
             print("Invalid task number.")
     except ValueError:
-        print("Please enter a valid number.")
+        print("Please enter a valid number.") # Handle non-integer input
+
 
 def delete_task():
     view_tasks()
