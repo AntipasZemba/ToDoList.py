@@ -40,18 +40,19 @@ def mark_completed():
     except ValueError:
         print("Please enter a valid number.") # Handle non-integer input
 
-
+# Function to delete a task from list
 def delete_task():
-    view_tasks()
+    view_tasks() # Show current tasks
     try:
         num = int(input("Enter task number to delete: "))
         if 1 <= num <= len(tasks):
-            removed = tasks.pop(num - 1)
+            removed = tasks.pop(num - 1) # Remove the selected task
             print(f"Removed task: {removed['task']}")
         else:
             print("Invalid task number.")
     except ValueError:
-        print("Please enter a valid number.")
+        print("Please enter a valid number.") # Handle non-integer input
+
 
 # 🔁 Main loop
 while True:
