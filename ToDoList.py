@@ -54,7 +54,7 @@ def delete_task():
         print("Please enter a valid number.") # Handle non-integer input
 
 
-# 🔁 Main loop
+# 🔁 Main loop: continually show the menu and respond to user choices
 while True:
     show_menu()
     choice = input("Choose an option (1-5): ")
