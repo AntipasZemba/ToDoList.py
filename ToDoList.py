@@ -71,4 +71,4 @@ while True:
         print("Goodbye!") # Exit the program
         break
     else:
-        print("Invalid option. Try again.")
+        print("Invalid option. Try again.") # Handle unexpected input
